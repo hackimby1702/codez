@@ -1,0 +1,423 @@
+<div class="formaspagamento" style=" padding-top: 30px;">
+<div class="formaspag" id="formspagdad" style="width: 100%; height: 80px; background-color: #ffffff; border-radius: 5px;">
+<i class="pixpag" id="pixsvg">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="#7339C9 " height="30px" viewBox="0 0 16 16"><path d="M11.917 11.71a2.046 2.046 0 0 1-1.454-.602l-2.1-2.1a.4.4 0 0 0-.551 0l-2.108 2.108a2.044 2.044 0 0 1-1.454.602h-.414l2.66 2.66c.83.83 2.177.83 3.007 0l2.667-2.668h-.253zM4.25 4.282c.55 0 1.066.214 1.454.602l2.108 2.108a.39.39 0 0 0 .552 0l2.1-2.1a2.044 2.044 0 0 1 1.453-.602h.253L9.503 1.623a2.127 2.127 0 0 0-3.007 0l-2.66 2.66h.414z"/><path d="m14.377 6.496-1.612-1.612a.307.307 0 0 1-.114.023h-.733c-.379 0-.75.154-1.017.422l-2.1 2.1a1.005 1.005 0 0 1-1.425 0L5.268 5.32a1.448 1.448 0 0 0-1.018-.422h-.9a.306.306 0 0 1-.109-.021L1.623 6.496c-.83.83-.83 2.177 0 3.008l1.618 1.618a.305.305 0 0 1 .108-.022h.901c.38 0 .75-.153 1.018-.421L7.375 8.57a1.034 1.034 0 0 1 1.426 0l2.1 2.1c.267.268.638.421 1.017.421h.733c.04 0 .079.01.114.024l1.612-1.612c.83-.83.83-2.178 0-3.008z"/></svg>
+ 
+      <div class="formspag-container">
+     <span  style="font-size: 20px; font-weight: bold;">R$ <span id="pixdesconto" style="font-size: 20px; font-weight: bold;"></span></span>
+
+       
+
+
+      
+   <span class="formspag-container-desc" style="font-size: 15px;">exclusivo no PIX</span> 
+  </div>
+</i>  
+  <hr color="#eeeeee" style="width: 100%; height: 0,1px">
+  
+
+
+
+      
+  <i class="pixpag" id="cardsvg">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#7339C9" height="30px" version="1.1" id="Layer_1" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<path d="M0,394c0,23.5,19.1,42.7,42.7,42.7h426.7c23.5,0,42.7-19.1,42.7-42.7v-42.7H0V394z M469.3,95.3H42.7  C19.1,95.3,0,114.5,0,138v170.7h512V138C512,114.5,492.9,95.3,469.3,95.3z"/>
+</svg>
+    <div class="formspag-container">
+      
+
+      
+<a id="maisFormasPagamento" style="text-decoration: underline;">mais formas de pagamento</a>
+
+
+      
+<div class="modal-container">
+  <div id="modal" style="display: none;">
+    <div class="modal-background"></div>
+
+
+
+
+
+
+
+
+
+
+ {% comment %} CARTAO {% endcomment %}
+      
+    <div class="modal-content-cartao" style="overflow-y: scroll;">
+      <p style="    font-size: 25px; font-weight: bold; display: flex; justify-content: center;">FORMAS DE PAGAMENTO</p>
+      <div class="modaliconsmaster" id="modaliconsmaster" style="display: flex; overflow: auto;     justify-content: space-between; margin-left: 60px; margin-right: 60px;">
+
+
+      
+
+ {% comment %} ICONES {% endcomment %}      
+     
+      <a class="modalcardicon" style=" display:flex; flex-direction: column; height: 90px; min-width: 96px; padding: 20px 2px 8px; align-items: center; gap: 8px; font-size: 14px; position: relative; ">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#7339C9" height="30px" version="1.1" id="Layer_1" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path d="M0,394c0,23.5,19.1,42.7,42.7,42.7h426.7c23.5,0,42.7-19.1,42.7-42.7v-42.7H0V394z M469.3,95.3H42.7  C19.1,95.3,0,114.5,0,138v170.7h512V138C512,114.5,492.9,95.3,469.3,95.3z"/></svg> 
+      <div class="titlemodalbutton"  id="modalcartaobutton" style=" color:#7339C9; font-weight: bold;">CARTÃO</div></a>
+
+
+
+
+      
+        <a class="modalboletoicon" id="modalboletoicon" style=" display:flex; flex-direction: column; height: 90px; min-width: 96px; padding: 20px 2px 8px; align-items: center; gap: 8px; font-size: 14px; position: relative; ">    
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="_x32_" viewBox="0 0 512 512" xml:space="preserve"><style type="text/css">.st0{fill:#BCB6C4;}</style><g><rect y="94.103" class="st0" width="48.569" height="323.795"/><rect x="72.854" y="94.103" class="st0" width="24.284" height="323.795"/><polygon class="st0" points="121.423,94.103 121.423,417.897 145.708,417.897 169.992,417.897 169.992,94.103 145.708,94.103  "/><polygon class="st0" points="194.277,94.103 194.277,417.897 218.561,417.897 242.846,417.897 242.846,94.103 218.561,94.103  "/><rect x="267.13" y="94.103" class="st0" width="24.285" height="323.795"/><polygon class="st0" points="339.984,94.103 315.7,94.103 315.7,417.897 339.984,417.897 364.269,417.897 388.554,417.897    388.554,94.103 364.269,94.103  "/><polygon class="st0" points="412.838,94.103 412.838,417.897 437.122,417.897 462.083,417.897 462.083,94.103 437.122,94.103  "/><rect x="487.044" y="94.103" class="st0" width="24.956" height="323.795"/></g></svg>
+      <div class="titlemodalicon"  id="modalboletobutton" style=" color:#BCB6C4; font-weight: bold;">BOLETO</div></a>
+
+
+
+      
+
+      <a class="modalpixicon" id="boletoselect" style=" display:flex; flex-direction: column; height: 90px; min-width: 96px; padding: 20px 2px 8px; align-items: center; gap: 8px; font-size: 14px; position: relative; ">
+       <svg xmlns="http://www.w3.org/2000/svg" fill="#BCB6C4 " height="30px" viewBox="0 0 16 16"><path d="M11.917 11.71a2.046 2.046 0 0 1-1.454-.602l-2.1-2.1a.4.4 0 0 0-.551 0l-2.108 2.108a2.044 2.044 0 0 1-1.454.602h-.414l2.66 2.66c.83.83 2.177.83 3.007 0l2.667-2.668h-.253zM4.25 4.282c.55 0 1.066.214 1.454.602l2.108 2.108a.39.39 0 0 0 .552 0l2.1-2.1a2.044 2.044 0 0 1 1.453-.602h.253L9.503 1.623a2.127 2.127 0 0 0-3.007 0l-2.66 2.66h.414z"/><path d="m14.377 6.496-1.612-1.612a.307.307 0 0 1-.114.023h-.733c-.379 0-.75.154-1.017.422l-2.1 2.1a1.005 1.005 0 0 1-1.425 0L5.268 5.32a1.448 1.448 0 0 0-1.018-.422h-.9a.306.306 0 0 1-.109-.021L1.623 6.496c-.83.83-.83 2.177 0 3.008l1.618 1.618a.305.305 0 0 1 .108-.022h.901c.38 0 .75-.153 1.018-.421L7.375 8.57a1.034 1.034 0 0 1 1.426 0l2.1 2.1c.267.268.638.421 1.017.421h.733c.04 0 .079.01.114.024l1.612-1.612c.83-.83.83-2.178 0-3.008z"/></svg> 
+      <div class="titlemodalicon"  id="modalpixbutton" style=" color:#BCB6C4; font-weight: bold;">PIX</div></a>  
+
+      </div>  {% comment %} FIM DIV ICONS {% endcomment %}
+
+
+
+
+
+
+
+
+
+
+
+{% comment %} CONFIG LISTA PARCELAS {% endcomment %}
+      
+
+<div class="listaparcelasmodal" id="listaparcelasmodal" style="display: flex; flex-direction: column; -webkit-box-align: center; align-items: center; ">
+
+<ul class="listaparcelasmodal-list" style="width: 100%; display: flex; flex-direction:column; margin-top: 2rem; padding-right: 0.5rem; max-height: 30rem; ">
+  <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; background-color: #f2f2f5">
+    <span style="font-size: 1rem; line-height: 1.5rem;  color:#7339C9" id="listmodal1">1X sem juros de R$<span id="val-em1"></span></span>
+    <span  style=" color:#7339C9">R$ <span id="val-total-em1"></span></span>
+  </li>
+  <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; ">
+    <span style="font-size: 1rem; line-height: 1.5rem; color:#7339C9"id="listmodal2">2X sem juros de R$<span id="val-em2"></span></span>
+    <span style=" color:#7339C9">R$ <span id="val-total-em2"></span></span>
+  </li>
+   <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; background-color: #f2f2f5 ">
+    <span style="font-size: 1rem; line-height: 1.5rem; color:#7339C9" id="listmodal3">3X sem juros de R$<span id="val-em3"></span></span>
+    <span style=" color:#7339C9">R$ <span id="val-total-em3"></span></span>
+  </li>
+   <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; ">
+    <span style="font-size: 1rem; line-height: 1.5rem; color:#7339C9" id="listmodal4">4X sem juros de R$<span id="val-em4"></span></span>
+    <span style=" color:#7339C9">R$ <span id="val-total-em4"></span></span>
+  </li>
+ <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; background-color: #f2f2f5">
+    <span style="font-size: 1rem; line-height: 1.5rem;" id="listmodal5">5X com juros de R$<span id="val-em5"></span></span>
+    <span>R$ <span id="val-total-em5"></span></span>
+  </li>
+       <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; ">
+    <span style="font-size: 1rem; line-height: 1.5rem;" id="listmodal6">6X com juros de R$<span id="val-em6"></span></span>
+    <span>R$ <span id="val-total-em6"></span></span>
+  </li>
+       <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; background-color: #f2f2f5">
+    <span style="font-size: 1rem; line-height: 1.5rem;" id="listmodal7">7X com juros de R$<span id="val-em7"></span></span>
+    <span>R$ <span id="val-total-em7"></span></span>
+  </li>
+       <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; ">
+    <span style="font-size: 1rem; line-height: 1.5rem;" id="listmodal8">8X com juros de R$<span id="val-em8"></span></span>
+    <span>R$ <span id="val-total-em8"></span></span>
+  </li>
+       <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; background-color: #f2f2f5">
+    <span style="font-size: 1rem; line-height: 1.5rem;" id="listmodal9">9X com juros de R$<span id="val-em9"></span></span>
+    <span>R$ <span id="val-total-em9"></span></span>
+  </li>
+       <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; ">
+    <span style="font-size: 1rem; line-height: 1.5rem;" id="listmodal10">10X com juros de R$<span id="val-em10"></span></span>
+    <span>R$ <span id="val-total-em10"></span></span>
+  </li>
+             <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; background-color: #f2f2f5">
+    <span style="font-size: 1rem; line-height: 1.5rem;" id="listmodal11">11X com juros de R$<span id="val-em11"></span></span>
+    <span>R$ <span id="val-total-em11"></span></span>
+  </li>
+             <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify; margin-bottom: 2rem; justify-content: space-between;padding: 0.5rem 1rem; ">
+    <span style="font-size: 1rem; line-height: 1.5rem;" id="listmodal12">12X com juros de R$<span id="val-em12"></span></span>
+    <span>R$ <span id="val-total-em12"></span></span>
+  </li>
+      
+      
+   </ul>      
+{% comment %} FIM CONFIG LISTA PARCELAS {% endcomment %}
+
+      
+
+
+
+
+ {% comment %} SCRIPT RESPONSÁVEL POR ABRIR O MODAL {% endcomment %}     
+      
+<script>
+  var maisFormasPagamento = document.getElementById("maisFormasPagamento");
+  var modal = document.getElementById("modal");
+  var modalBackground = modal.querySelector(".modal-background");
+
+
+      
+  maisFormasPagamento.addEventListener("click", function() {
+modal.style.display = "block";
+document.body.classList.add("dark-background"); // adiciona a classe para escurecer o fundo do body
+});
+
+modalBackground.addEventListener("click", function(event) {
+if (event.target === modalBackground) {
+modal.style.display = "none";
+document.body.classList.remove("dark-background"); // remove a classe para clarear o fundo do body
+}
+});
+
+</script>   
+</div> 
+
+
+
+
+
+
+
+
+ {% comment %} BOLETO {% endcomment %}
+      
+    <div class="modal-content-boleto" id="modal-content-boleto" style="display: none;">
+      <p style="    font-size: 25px; font-weight: bold; display: flex; justify-content: center;">BOLETO</p>
+      <div class="modaliconsmaster" id="modaliconsmaster" style="display: flex; overflow: hidden;     justify-content: space-between; margin-left: 60px; margin-right: 60px;">
+
+
+      
+
+ {% comment %} ICONES {% endcomment %}      
+     
+      <a class="modalcardicon" style=" display:flex; flex-direction: column; height: 90px; min-width: 96px; padding: 20px 2px 8px; align-items: center; gap: 8px; font-size: 14px; position: relative; ">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#BCB6C4" height="30px" version="1.1" id="Layer_1" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path d="M0,394c0,23.5,19.1,42.7,42.7,42.7h426.7c23.5,0,42.7-19.1,42.7-42.7v-42.7H0V394z M469.3,95.3H42.7  C19.1,95.3,0,114.5,0,138v170.7h512V138C512,114.5,492.9,95.3,469.3,95.3z"/></svg> 
+      <div class="titlemodalbutton"  id="modalcartaobutton" style=" color:#BCB6C4; font-weight: bold;">CARTÃO</div></a>
+
+
+
+
+      
+        <a class="modalboletoicon" id="modalboletoicon" style=" display:flex; flex-direction: column; height: 90px; min-width: 96px; padding: 20px 2px 8px; align-items: center; gap: 8px; font-size: 14px; position: relative; ">    
+     
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="_x32_" viewBox="0 0 512 512" xml:space="preserve"><style type="text/css">.st0{fill:#7339C9;}</style><g><rect y="94.103" class="st0" width="48.569" height="323.795"/><rect x="72.854" y="94.103" class="st0" width="24.284" height="323.795"/><polygon class="st0" points="121.423,94.103 121.423,417.897 145.708,417.897 169.992,417.897 169.992,94.103 145.708,94.103  "/><polygon class="st0" points="194.277,94.103 194.277,417.897 218.561,417.897 242.846,417.897 242.846,94.103 218.561,94.103  "/><rect x="267.13" y="94.103" class="st0" width="24.285" height="323.795"/><polygon class="st0" points="339.984,94.103 315.7,94.103 315.7,417.897 339.984,417.897 364.269,417.897 388.554,417.897    388.554,94.103 364.269,94.103  "/><polygon class="st0" points="412.838,94.103 412.838,417.897 437.122,417.897 462.083,417.897 462.083,94.103 437.122,94.103  "/><rect x="487.044" y="94.103" class="st0" width="24.956" height="323.795"/></g></svg>
+      <div class="titlemodalicon"  id="modalboletobutton" style=" color:#7339C9; font-weight: bold;">BOLETO</div></a>
+
+
+
+      
+
+      <a class="modalpixicon" id="boletoselect" style=" display:flex; flex-direction: column; height: 90px; min-width: 96px; padding: 20px 2px 8px; align-items: center; gap: 8px; font-size: 14px; position: relative; ">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="#BCB6C4 " height="30px" viewBox="0 0 16 16"><path d="M11.917 11.71a2.046 2.046 0 0 1-1.454-.602l-2.1-2.1a.4.4 0 0 0-.551 0l-2.108 2.108a2.044 2.044 0 0 1-1.454.602h-.414l2.66 2.66c.83.83 2.177.83 3.007 0l2.667-2.668h-.253zM4.25 4.282c.55 0 1.066.214 1.454.602l2.108 2.108a.39.39 0 0 0 .552 0l2.1-2.1a2.044 2.044 0 0 1 1.453-.602h.253L9.503 1.623a2.127 2.127 0 0 0-3.007 0l-2.66 2.66h.414z"/><path d="m14.377 6.496-1.612-1.612a.307.307 0 0 1-.114.023h-.733c-.379 0-.75.154-1.017.422l-2.1 2.1a1.005 1.005 0 0 1-1.425 0L5.268 5.32a1.448 1.448 0 0 0-1.018-.422h-.9a.306.306 0 0 1-.109-.021L1.623 6.496c-.83.83-.83 2.177 0 3.008l1.618 1.618a.305.305 0 0 1 .108-.022h.901c.38 0 .75-.153 1.018-.421L7.375 8.57a1.034 1.034 0 0 1 1.426 0l2.1 2.1c.267.268.638.421 1.017.421h.733c.04 0 .079.01.114.024l1.612-1.612c.83-.83.83-2.178 0-3.008z"/></svg> 
+      <div class="titlemodalicon"  id="modalpixbutton" style=" color:#BCB6C4; font-weight: bold;">PIX</div></a>  
+
+      </div>  {% comment %} FIM DIV ICONS {% endcomment %}     
+      
+      </div>
+  
+   
+<script>
+function showContent(element, modalContent) {
+  // oculta todos os modais
+  document.querySelectorAll('.modal-content').forEach(content => {
+    content.style.display = 'none';
+  });
+  // mostra o modal correspondente ao elemento clicado
+  modalContent.style.display = 'block';
+}
+
+// adiciona evento de clique para cada ícone/modal
+const modalBoletoIcon = document.querySelector('.modalboletoicon');
+const modalContentBoleto = document.querySelector('.modal-content-boleto');
+modalBoletoIcon.addEventListener('click', () => {
+  showContent(modalBoletoIcon, modalContentBoleto);
+});
+
+const modalCardIcon = document.querySelector('.modalcardicon');
+const modalContentCard = document.querySelector('.modal-content-card');
+modalCardIcon.addEventListener('click', () => {
+  showContent(modalCardIcon, modalContentCard);
+});
+
+const modalPixIcon = document.querySelector('.modalpixicon');
+const modalContentPix = document.querySelector('.modal-content-pix');
+modalPixIcon.addEventListener('click', () => {
+  showContent(modalPixIcon, modalContentPix);
+});
+</script>
+
+
+
+
+
+
+
+      
+</div>  
+</div>   
+
+
+
+ {% comment %} PIX {% endcomment %}
+      
+    <div class="modal-content-pix" id="modal-content-pix" style="display: none;">
+      <p style="    font-size: 25px; font-weight: bold; display: flex; justify-content: center;">PIX</p>
+      <div class="modaliconsmaster" id="modaliconsmaster" style="display: flex; overflow: auto;     justify-content: space-between; margin-left: 60px; margin-right: 60px;">
+
+
+      
+
+ {% comment %} ICONES {% endcomment %}      
+     
+      <a class="modalcardicon" style=" display:flex; flex-direction: column; height: 90px; min-width: 96px; padding: 20px 2px 8px; align-items: center; gap: 8px; font-size: 14px; position: relative; ">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#BCB6C4" height="30px" version="1.1" id="Layer_1" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path d="M0,394c0,23.5,19.1,42.7,42.7,42.7h426.7c23.5,0,42.7-19.1,42.7-42.7v-42.7H0V394z M469.3,95.3H42.7  C19.1,95.3,0,114.5,0,138v170.7h512V138C512,114.5,492.9,95.3,469.3,95.3z"/></svg> 
+      <div class="titlemodalbutton"  id="modalcartaobutton" style=" color:#BCB6C4; font-weight: bold;">CARTÃO</div></a>
+
+
+
+
+      
+        <a class="modalboletoicon" id="modalboletoicon" style=" display:flex; flex-direction: column; height: 90px; min-width: 96px; padding: 20px 2px 8px; align-items: center; gap: 8px; font-size: 14px; position: relative; ">    
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="_x32_" viewBox="0 0 512 512" xml:space="preserve"><style type="text/css">.st0{fill:#BCB6C4;}</style><g><rect y="94.103" class="st0" width="48.569" height="323.795"/><rect x="72.854" y="94.103" class="st0" width="24.284" height="323.795"/><polygon class="st0" points="121.423,94.103 121.423,417.897 145.708,417.897 169.992,417.897 169.992,94.103 145.708,94.103  "/><polygon class="st0" points="194.277,94.103 194.277,417.897 218.561,417.897 242.846,417.897 242.846,94.103 218.561,94.103  "/><rect x="267.13" y="94.103" class="st0" width="24.285" height="323.795"/><polygon class="st0" points="339.984,94.103 315.7,94.103 315.7,417.897 339.984,417.897 364.269,417.897 388.554,417.897    388.554,94.103 364.269,94.103  "/><polygon class="st0" points="412.838,94.103 412.838,417.897 437.122,417.897 462.083,417.897 462.083,94.103 437.122,94.103  "/><rect x="487.044" y="94.103" class="st0" width="24.956" height="323.795"/></g></svg>
+      <div class="titlemodalicon"  id="modalboletobutton" style=" color:#BCB6C4; font-weight: bold;">BOLETO</div></a>
+
+
+
+      
+
+      <a class="modalpixicon" id="modalpixicon" style=" display:flex; flex-direction: column; height: 90px; min-width: 96px; padding: 20px 2px 8px; align-items: center; gap: 8px; font-size: 14px; position: relative; ">
+       <svg xmlns="http://www.w3.org/2000/svg" fill="#7339C9 " height="30px" viewBox="0 0 16 16"><path d="M11.917 11.71a2.046 2.046 0 0 1-1.454-.602l-2.1-2.1a.4.4 0 0 0-.551 0l-2.108 2.108a2.044 2.044 0 0 1-1.454.602h-.414l2.66 2.66c.83.83 2.177.83 3.007 0l2.667-2.668h-.253zM4.25 4.282c.55 0 1.066.214 1.454.602l2.108 2.108a.39.39 0 0 0 .552 0l2.1-2.1a2.044 2.044 0 0 1 1.453-.602h.253L9.503 1.623a2.127 2.127 0 0 0-3.007 0l-2.66 2.66h.414z"/><path d="m14.377 6.496-1.612-1.612a.307.307 0 0 1-.114.023h-.733c-.379 0-.75.154-1.017.422l-2.1 2.1a1.005 1.005 0 0 1-1.425 0L5.268 5.32a1.448 1.448 0 0 0-1.018-.422h-.9a.306.306 0 0 1-.109-.021L1.623 6.496c-.83.83-.83 2.177 0 3.008l1.618 1.618a.305.305 0 0 1 .108-.022h.901c.38 0 .75-.153 1.018-.421L7.375 8.57a1.034 1.034 0 0 1 1.426 0l2.1 2.1c.267.268.638.421 1.017.421h.733c.04 0 .079.01.114.024l1.612-1.612c.83-.83.83-2.178 0-3.008z"/></svg> 
+      <div class="titlemodalicon"  id="modalpixbutton" style=" color:#7339C9; font-weight: bold;">PIX</div></a>  
+
+      </div>  {% comment %} FIM DIV ICONS {% endcomment %}     
+      
+      </div>
+  
+   
+<script>
+function showContent(element, modalContent) {
+  // oculta todos os modais
+  document.querySelectorAll('.modal-content').forEach(content => {
+    content.style.display = 'none';
+  });
+  // mostra o modal correspondente ao elemento clicado
+  modalContent.style.display = 'block';
+}
+
+// adiciona evento de clique para cada ícone/modal
+const modalBoletoIcon = document.querySelector('.modalboletoicon');
+const modalContentBoleto = document.querySelector('.modal-content-boleto');
+modalBoletoIcon.addEventListener('click', () => {
+  showContent(modalBoletoIcon, modalContentBoleto);
+});
+
+const modalCardIcon = document.querySelector('.modalcardicon');
+const modalContentCard = document.querySelector('.modal-content-card');
+modalCardIcon.addEventListener('click', () => {
+  showContent(modalCardIcon, modalContentCard);
+});
+
+const modalPixIcon = document.querySelector('.modalpixicon');
+const modalContentPix = document.querySelector('.modal-content-pix');
+modalPixIcon.addEventListener('click', () => {
+  showContent(modalPixIcon, modalContentPix);
+});
+</script>     
+</div>      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+<style>
+
+  .modal-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+      
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+      {% comment %}
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999999;
+{% endcomment %}
+}
+
+
+.modal-content-cartao {   
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 500px;
+  background-color: #fafafa;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  overflow: hidden;
+  z-index: 999999;
+}
+      
+.modal-content-boleto {   
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 500px;
+  background-color: #fafafa;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  overflow: hidden;
+  z-index: 999999;
+}
+
+.modal-content-pix {   
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 500px;
+  background-color: #fafafa;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  overflow: hidden;
+  z-index: 999999;
+}
+
+      
+</style>   
